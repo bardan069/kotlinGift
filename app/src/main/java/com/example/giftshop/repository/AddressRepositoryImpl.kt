@@ -27,3 +27,9 @@ class AddressRepositoryImpl : AddressRepository {
             .addOnFailureListener { callback(false, "Error updating address") }
     }
 
+    override fun deleteAddress(addressId: String, callback: (Boolean, String) -> Unit) {
+        collection.document(addressId).delete()
+            .addOnSuccessListener { callback(true, "Address deleted") }
+            .addOnFailureListener { callback(false, "Error deleting address") }
+    }
+}
