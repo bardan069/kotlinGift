@@ -140,3 +140,19 @@ class ProductRepositoryImpl : ProductRepository{
                 if (snapshot.exists()){
                     var allProducts = mutableListOf<ProductModel>()
                     for (eachProduct in snapshot.children){
+                        var products = eachProduct.getValue(ProductModel::class.java)
+                        if (products !=null){
+                            allProducts.add(products)
+                        }
+                    }
+                    callback(true,"product fetched", allProducts)
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                callback(false,error.message,emptyList())
+            }
+        })
+    }
+
+}
