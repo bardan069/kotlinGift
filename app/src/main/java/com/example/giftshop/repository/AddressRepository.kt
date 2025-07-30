@@ -8,3 +8,4 @@ interface AddressRepository {
     fun updateAddress(address: AddressModel, callback: (Boolean, String) -> Unit)
     fun deleteAddress(addressId: String, callback: (Boolean, String) -> Unit)
 }
+1
