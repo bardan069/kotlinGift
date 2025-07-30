@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GiftShop</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_nav_bar">Navigation</string>
+    <string name="title_activity_admin_dashboard">Admin Dashboard</string>
+    <string name="title_activity_main2">Main Screen</string>
+    <string name="title_activity_add_product">Add Product</string>
+    <string name="title_activity_dashboard">User Dashboard</string>
+    <string name="title_activity_forget_password">Forgot Password</string>
+    <string name="title_activity_registration">Register</string>
+    <string name="title_activity_update_product">Update Product</string>
+    <string name="select_role">Select Role</string>
+    <string name="admin">Admin</string>
+    <string name="user">User</string>
+</resources>
